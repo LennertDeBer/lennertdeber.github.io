@@ -1,0 +1,145 @@
+<html>
+    <header>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+       
+        <link rel="stylesheet" href="styles.css">
+        <title>
+            CV for Lennert de Beer
+        </title>
+    </header>
+
+    <body onload="loadProgressBars(0, 45,1, 60,2, 35,3, 80,4, 75)">
+      <h1>Programing Languages</h1>
+   
+<table class="PLTable">
+
+  <tr>
+
+    <td class="ProLang">
+      Python
+    </td>
+
+    <td class="ProBar">
+    <div class="TotalBar">
+      <div id="progLangPyth"class="BarFill" ></div>
+    </div> 
+  </td>
+
+  </tr>
+
+
+  <tr>
+
+    <td class="ProLang">
+      HTML
+    </td>
+
+    <td class="ProBar">
+    <div class="TotalBar">
+      <div id="progLangHtml"class="BarFill" ></div>
+    </div> 
+  </td>
+  
+  </tr>
+
+  <tr>
+
+    <td class="ProLang">
+      C++
+    </td>
+
+    <td class="ProBar">
+    <div class="TotalBar">
+      <div id="progLangC++"class="BarFill" ></div>
+    </div> 
+  </td>
+  
+  </tr>
+
+  <tr>
+
+    <td class="ProLang">
+      C#
+    </td>
+
+    <td class="ProBar">
+    <div class="TotalBar">
+      <div id="progLangC#"class="BarFill" ></div>
+    </div> 
+  </td>
+  
+  </tr>
+
+  <tr>
+
+    <td class="ProLang">
+      Java
+    </td>
+
+    <td class="ProBar">
+    <div class="TotalBar">
+      <div id="progLangJava"class="BarFill" ></div>
+    </div> 
+  </td>
+  
+  </tr>
+</table>
+
+           
+          
+
+<a class="button" href="index.html"> Back</a>
+    </body >
+
+    <script>
+      function loadProgressBars(c1,end1,c2,end2,c3,end3,c4,end4,c5,end5)
+      {
+        move(c1, end1);
+        move(c2, end2);
+        move(c3, end3);
+        move(c4, end4);
+        move(c5, end5);
+      }
+        
+        function move(d, end) {
+          var i = 0;
+          var elem;
+          if (i == 0) {
+            i = 1;
+           if(d==0)
+           {
+              elem = document.getElementById("progLangPyth");
+           }
+           if(d==1)
+           {
+              elem = document.getElementById("progLangHtml");
+           }
+           if(d==2)
+           {
+              elem = document.getElementById("progLangC++");
+           }
+           if(d==3)
+           {
+              elem = document.getElementById("progLangC#");
+           }
+           if(d==4)
+           {
+              elem = document.getElementById("progLangJava");
+           }
+            
+            var width = 1;
+            var id = setInterval(frame, 10);
+            function frame() {
+              if (width >= end) {
+                clearInterval(id);
+                i = 0;
+              } else {
+                width++;
+                elem.style.width = width + "%";
+              }
+            
+            }
+          }
+        }
+        </script>
+</html>

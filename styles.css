@@ -1,0 +1,47 @@
+p{
+    text-align: center;
+    color: red;
+    position: relative;
+    width:auto;
+    height: auto;
+}
+.BarFill {
+    align-self: 50px;
+    width: 1%;
+    height: 30px;
+    background-color: green;
+  }
+  
+  .TotalBar {
+    align-self: 50px;
+    width: 100%;
+    background-color: grey;
+    
+  }
+.button{
+    align-self: center;
+    align-content: center;
+   
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    border-radius:3vw;
+    border:2px solid black;
+    background:rgb(255, 103, 103);
+    padding: 2px;
+    width:50px;
+    height: 20px;
+}
+.PLTable{
+    width: 100%;
+    border: 1px solid black;
+}
+.ProLang{
+    width:5%;
+    border: 1px solid black;
+}
+.ProBar{
+    width:95%;
+    border: 1px solid black;
+}
